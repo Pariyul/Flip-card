@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+   color: white;
+   font-family: sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background: linear-gradient(45deg, rgba(43, 35, 112, 0.962),rgb(139, 48, 110));
+}
+.container{
+    height: 500px;
+    width: 350px;
+}
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotatey(180deg);
+}
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front , .back{
+   width: 100%;
+    height: 100%;  
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front{
+
+    background-image: url("shubh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.front p{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.back{
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    padding: 50px;
+    
+}
+.back h2{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.back p{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  padding: 10px;
+    font-size: .85rem;
+   
+}
+
